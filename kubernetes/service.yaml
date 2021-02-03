@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: thefirstcontainer
+spec:
+  selector:
+    app: thefirstcontainer
+  ports:
+    - protocol: TCP
+      port: 8765
+      targetPort: 8765
